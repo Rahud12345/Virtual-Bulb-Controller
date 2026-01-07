@@ -1,0 +1,30 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fan</title>
+    </head>
+    <body>
+        <h1>Welcome TO Javascript</h1><!--- MAIN HEADING -->
+        <p>Touch for FAN</p><!--Information for user-->
+        <button ID="Togglebutton" onclick="toggleBulb()">ON</button>
+        <img id="myImage" src="pic_bulboff (1).gif" alt="bulb" width="100px">
+    <script>
+        let isBulbOn=false;
+        const bulbImage=document.getElementById('myImage');
+    function toggleBulb(){
+        if(isBulbOn){
+            bulbImage.src="pic_bulboff (1).gif";
+        Togglebutton.innerHTML="ON";
+        }
+        else{
+            bulbImage.src="pic_bulbon.gif";
+            Togglebutton.innerHTML="OFF";
+        }
+        isBulbOn = !isBulbOn;
+
+    }
+    </script>
+    </body>    
+    </html>
